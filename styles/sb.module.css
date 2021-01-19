@@ -1,0 +1,24 @@
+/* our philosophy */
+.philosophyContainer {
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+.philosophy {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 30px;
+  justify-content: space-evenly;
+}
+.pContent {
+  margin: 0px 10vh;
+}
+.pContent img {
+  width: 20vh;
+  height: 20vh;
+}
+.pContent h2 {
+  min-height: 10vh;
+}

@@ -1,25 +1,16 @@
 import Link from "next/link";
 import axios from "axios";
 import url from "../data/data";
+import sbStyles from "../styles/sb.module.css";
 function Surfboard(props) {
   let surfboard = props.surfboard[0];
   console.log(surfboard);
   return (
     <>
       <title>Surfboard</title>
+      {/* nav */}
       <div>
-        <h1>Surfboard</h1>
-      </div>
-      <div>
-        <Link href="/raw-engineering">
-          <a>Raw Engineering</a>
-        </Link>
-        <Link href="/contentstack">
-          <a>Contentstack</a>
-        </Link>
-      </div>
-      <div>
-        <nav>
+        <nav className={sbStyles.nav}>
           <img src={surfboard.surfboardLogo} alt="" />
           <div>
             {surfboard.navigationLinks.map((link, i) => {
@@ -55,16 +46,20 @@ function Surfboard(props) {
             );
           })}
         </div>
-        <div>
-          {surfboard.philosophy.map((philosophy, i) => {
-            return (
-              <div key={i}>
-                <img src={philosophy.image} alt="" />
-                <p>{philosophy.title}</p>
-                <p>{philosophy.content}</p>
-              </div>
-            );
-          })}
+        <div className={sbStyles.philosophyContainer}>
+          {/* our philosophy */}
+          <h1>Our Philosophy</h1>
+          <div className={sbStyles.philosophy}>
+            {surfboard.philosophy.map((philosophy, i) => {
+              return (
+                <div className={sbStyles.pContent} key={i}>
+                  <img src={philosophy.image} alt="" />
+                  <h2>{philosophy.title}</h2>
+                  <p>{philosophy.content}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
