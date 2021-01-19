@@ -55,9 +55,13 @@ function Contentstack(props) {
           <button className={CsStyles.buttton2}>TRY FOR FREE</button>
         </div>
         <hr />
-        <div>
+        <div className={CsStyles.footerSection}>
           {contentstack.footer.map((footerLinks, i) => {
-            return <li key={i}>{footerLinks}</li>;
+            return (
+              <li key={i} className={CsStyles.list}>
+                {footerLinks}
+              </li>
+            );
           })}
         </div>
       </div>
