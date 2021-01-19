@@ -11,10 +11,7 @@ function Home(props) {
     <>
       <title>Home</title>
       <div>
-        <h1>Home</h1>
-        <div>
-          <HomeMarkup />
-        </div>
+        <HomeMarkup />
       </div>
     </>
   );
