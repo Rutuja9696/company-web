@@ -1,0 +1,59 @@
+.banner {
+  width: 100%;
+  height: auto;
+  background: no-repeat
+    url(https://images.contentstack.io/v3/assets/bltc5a09bf374882538/blt0eac3686a06a4a3f/5f1a2be2ecbff322d09554d6/hero-carousel-1.jpg);
+  text-align: center;
+}
+.nav {
+  width: 90%;
+  /* border: 2px solid black; */
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  padding: 10px;
+}
+.bannerLogo {
+  width: 30vh;
+  height: 5vh;
+  margin: 2vh;
+}
+.options {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+.lists {
+  padding: 10px;
+}
+.heading {
+  width: 75%;
+  color: white;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -1px;
+  margin: 9% auto 0%;
+  text-align: center;
+}
+.subHeading {
+  width: 78%;
+  color: white;
+  margin: 4% auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.buttons {
+  display: inline-block;
+  border-radius: 3px;
+  background: #eb5646;
+  background-image: none;
+  color: #fff;
+  padding: 0 30px;
+  line-height: 2.5;
+  border: 2px solid transparent;
+}
+.linkText {
+  color: #eb5646;
+  padding: 20px 0px 50px 0px;
+}
