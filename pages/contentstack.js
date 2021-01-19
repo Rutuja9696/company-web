@@ -52,15 +52,15 @@ function Contentstack(props) {
         <div className={CsStyles.believeBox}>
           <h1>{contentstack.bottomBanner.title}</h1>
           <button className={CsStyles.buttons}>REQUEST A DEMO</button>
-          <button className={CsStyles.buttton2}>TRY FOR FREE</button>
+          <button className={CsStyles.button2}>TRY FOR FREE</button>
         </div>
         <hr />
         <div className={CsStyles.footerSection}>
           {contentstack.footer.map((footerLinks, i) => {
             return (
-              <li key={i} className={CsStyles.list}>
+              <p key={i} className={CsStyles.list}>
                 {footerLinks}
-              </li>
+              </p>
             );
           })}
         </div>
