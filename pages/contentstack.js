@@ -36,21 +36,23 @@ function Contentstack(props) {
           </div>
         </div>
         {/* end of main div */}
-        <div>
-          <h1>Why Choose Contentstack?</h1>
-          {contentstack.whyChooseContentstack.map((whyChoose, i) => {
-            return (
-              <div key={i}>
-                <h3>{whyChoose.title}</h3>
-                <p>{whyChoose.content}</p>
-              </div>
-            );
-          })}
+        <div className={CsStyles.banner2}>
+          <h2>Why Choose Contentstack?</h2>
+          <div className={CsStyles.whyBox}>
+            {contentstack.whyChooseContentstack.map((whyChoose, i) => {
+              return (
+                <div key={i} className={CsStyles.whyBoxItems}>
+                  <h3>{whyChoose.title}</h3>
+                  <p>{whyChoose.content}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
-        <div>
+        <div className={CsStyles.believeBox}>
           <h1>{contentstack.bottomBanner.title}</h1>
-          <button>REQUEST A DEMO</button>
-          <button>TRY FOR FREE</button>
+          <button className={CsStyles.buttons}>REQUEST A DEMO</button>
+          <button className={CsStyles.buttton2}>TRY FOR FREE</button>
         </div>
         <hr />
         <div>
