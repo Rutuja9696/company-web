@@ -6,6 +6,8 @@ class HomeMarkup extends Component {
   render() {
     return (
       <div className={HomeStyles.container}>
+        <h2>Alone We Create...Together We Rule !</h2>
+        <h3>Explore more to know who we are...</h3>
         <div className={HomeStyles.buttonContainer}>
           <Link href="/contentstack">
             <button className={HomeStyles.button1}>Contentstack</button>

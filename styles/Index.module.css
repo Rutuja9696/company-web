@@ -1,16 +1,21 @@
 .container {
   width: 100%;
-  height: 90vh;
-  border: 2px solid red;
-  background: no-repeat
-    url(https://image.freepik.com/free-vector/watercolor-wallpaper-with-luxurious-golden-accents_79603-1195.jpg);
+  height: 100vh;
+  border: 1px solid transparent;
+  background: no-repeat center
+    url(https://image.freepik.com/free-photo/creative-wallpaper-with-white-shapes_23-2148811498.jpg);
+  background-size: 200vh;
+  text-align: center;
+  color: rgb(13, 77, 121);
+  padding: 80px;
+  font-size: 20px;
 }
 .buttonContainer {
   width: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 20% auto;
+  margin: 15% auto;
 }
 .button1 {
   display: inline-block;
@@ -31,4 +36,26 @@
   padding: 0 30px;
   line-height: 2.5;
   border: 2px solid #4e23c5;
+}
+@media (max-width: 999px) {
+  .buttonContainer {
+    flex-direction: column;
+  }
+  .button1 {
+    margin: 2vh;
+    font-size: 10px;
+    line-height: 1.5;
+    padding: 8px;
+  }
+  .button2 {
+    margin: 2vh;
+    font-size: 10px;
+    line-height: 1.5;
+    padding: 8px;
+  }
+}
+@media (max-width: 378px) {
+  .container {
+    font-size: 10px;
+  }
 }
