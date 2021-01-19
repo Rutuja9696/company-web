@@ -1,10 +1,35 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-
-export default function Home() {
+import Link from "next/link";
+import axios from "axios";
+import url from "../data/data";
+function Home(props) {
+  let home = props.home[0];
+  console.log(home);
   return (
     <>
-      <div>Home page</div>
+      <title>Home</title>
+      <div>
+        <h1>Home</h1>
+        <div>
+          <Link href="/contentstack">
+            <button>Contentstack</button>
+          </Link>
+          <Link href="/surfboard">
+            <button>Surfboard</button>
+          </Link>
+          <Link href="/rawEngineering">
+            <button>Raw Engineering</button>
+          </Link>
+        </div>
+      </div>
     </>
   );
 }
+export const getStaticProps = async () => {
+  let { data } = await axios.get(url + "home.json");
+  return {
+    props: {
+      home: [...data],
+    },
+  };
+};
+export default Home;
