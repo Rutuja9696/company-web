@@ -90,9 +90,11 @@ function RawEngineering(props) {
                   src={testimony.imageUrl}
                   alt="Testimony"
                 />
-                <p>{testimony.name}</p>
-                <p>{testimony.companyName}</p>
-                <p>"{testimony.message}"</p>
+                <div className={reStyles.testimonialText}>
+                  <p>{testimony.name}</p>
+                  <p>{testimony.companyName}</p>
+                  <p>"{testimony.message}"</p>
+                </div>
               </div>
             );
           })}
