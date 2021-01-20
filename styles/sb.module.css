@@ -148,3 +148,79 @@
   text-align: center;
   padding-bottom: 10vh;
 }
+@media (max-width: 999px) {
+  .header {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  .navigation {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navLinks {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 867px) {
+  .portfolioContainer {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+  .portfolioImage {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 590px) {
+  .banner {
+    width: 100%;
+    text-align: center;
+  }
+  .bannerTitle {
+    font-size: 45px;
+  }
+  .teamContainer {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  .teamImage {
+    margin: auto;
+    width: 40%;
+    height: 40%;
+  }
+  .philosophyContainer {
+    padding: 2px;
+  }
+  .philosophy {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1px;
+  }
+  .footerContent {
+    flex-direction: column;
+    justify-content: center;
+    margin: 2px;
+  }
+}
+@media (max-width: 476px) {
+  .portfolioImage {
+    width: 45%;
+    height: 30%;
+    margin: auto;
+  }
+}
+@media (max-width: 250px) {
+  .bannerTitle {
+    font-size: 25px;
+  }
+  .bannerSubtitle {
+    font-size: 16px;
+  }
+}
