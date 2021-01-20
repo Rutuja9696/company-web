@@ -23,7 +23,7 @@
   background: #0c0d64;
   background-image: none;
   color: #fff;
-  padding: 0 30px;
+  padding: 0 20px;
   line-height: 2.5;
   border: 2px solid transparent;
 }
@@ -47,6 +47,18 @@
 .logoImg {
   width: 10vh;
   height: 10vh;
+}
+@media (max-width: 1013px) {
+  .button1 {
+    margin: 1vh;
+    line-height: 1.5;
+    padding: 8px;
+  }
+  .button2 {
+    margin: 1vh;
+    line-height: 1.5;
+    padding: 8px;
+  }
 }
 @media (max-width: 999px) {
   .buttonContainer {
