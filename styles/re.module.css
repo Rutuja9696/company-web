@@ -25,7 +25,7 @@
   margin: 2vh 10vh;
   font-size: 15px;
 }
-.nav-Item {
+.navItem {
   margin: 3vh;
 }
 .banner {
@@ -34,10 +34,10 @@
 }
 .bannerText {
   width: 40%;
-  margin: 5vh 15vh;
+  margin: 5vh 10vh;
 }
 .bannerTitle {
-  font-size: 50px;
+  font-size: 40px;
 }
 .bannerSubtitle {
   font-size: 20px;
@@ -130,4 +130,204 @@
 .copyrightImage img {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 999px) {
+  .navLinks {
+    margin: 2vh;
+  }
+  .navItem {
+    margin: 1vh;
+  }
+}
+@media (max-width: 850px) {
+  .header {
+    height: 120vh;
+  }
+  .navLinks {
+    font-size: 12px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .bannerText {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .bannerTitle {
+    font-size: 30px;
+  }
+  .bannerImage {
+    width: 100vw;
+    height: 50vh;
+    margin: auto;
+  }
+  .bannerImage img {
+    width: 100%;
+    height: 100%;
+  }
+  .introText {
+    margin: auto 2vh;
+    text-align: center;
+  }
+  .whatWeDo {
+    flex-direction: column;
+    text-align: center;
+  }
+  .whatWeDoImage {
+    width: 100%;
+  }
+  .latestWorkContainer {
+    flex-direction: column;
+  }
+  .testimonialContainer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 720px) {
+  .companyLogo {
+    width: 20vh;
+    height: 8vh;
+    margin: 2vh 5vh;
+  }
+  .navLinks {
+    font-size: 8px;
+  }
+}
+@media (max-width: 520px) {
+  .companyLogo {
+    margin: 1vh 2vh;
+  }
+}
+@media (max-width: 490px) {
+  .companyLogo {
+    margin: auto;
+  }
+  .navigation {
+    flex-direction: column;
+    margin: auto;
+  }
+  .navLinks {
+    flex-direction: column;
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    height: 75vh;
+    margin-bottom: 2vh;
+  }
+  .navigation {
+    justify-content: center;
+  }
+  .navLinks {
+    font-size: 7px;
+  }
+  .bannerImage {
+    height: 30vh;
+  }
+  .bannerTitle {
+    font-size: 20px;
+  }
+  .bannerSubtitle {
+    font-size: 15px;
+  }
+  .introText,
+  .sectionHeading {
+    font-size: 15px;
+  }
+  .whatWeDo,
+  .latestWorkContainer,
+  .testimonialContainer {
+    margin: 2vh auto;
+  }
+  .whatWeDoText {
+    margin: 0px auto;
+  }
+  .whatWeDoHeading {
+    font-size: 15px;
+  }
+  .whatWeDoSubheading {
+    font-size: 12px;
+  }
+  .latestWorkText,
+  .testimonialText {
+    font-size: 12px;
+  }
+  .footerHeading {
+    font-size: 20px;
+    padding: 5vh;
+  }
+  .copyrightContainer {
+    font-size: 12px;
+  }
+}
+@media (max-width: 200px) {
+  .header {
+    height: auto;
+  }
+  .companyLogo {
+    width: 60vw;
+    margin: auto;
+  }
+  .navLinks {
+    font-size: 6px;
+  }
+  .bannerImage {
+    height: 20vh;
+  }
+  .bannerTitle {
+    font-size: 10px;
+  }
+  .bannerSubtitle {
+    font-size: 5px;
+  }
+  .introText,
+  .sectionHeading,
+  .whatWeDoHeading,
+  .whatWeDoSubheading,
+  .latestWorkText,
+  .testimonialText,
+  .footerHeading,
+  .copyrightContainer {
+    font-size: 10px;
+  }
+  .testimonailImage {
+    width: 30%;
+  }
+  .copyrightContainer {
+    margin: 0px 2vh;
+    padding-bottom: 5vh;
+  }
+  .copyrightLinks {
+    flex-direction: column;
+  }
+  .copyrightImage {
+    width: 5vh;
+  }
+}
+@media (max-width: 100px) {
+  .introText,
+  .sectionHeading,
+  .whatWeDoHeading,
+  .whatWeDoSubheading,
+  .latestWorkText,
+  .testimonialText,
+  .footerHeading,
+  .copyrightContainer {
+    font-size: 5px;
+  }
+  .companyLogo {
+    height: 5vh;
+  }
+  .bannerImage {
+    height: 10vh;
+  }
+  .footerHeading {
+    padding: 1vh;
+  }
+  .copyrightImage {
+    width: 2vh;
+  }
 }
