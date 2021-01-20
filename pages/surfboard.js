@@ -12,7 +12,6 @@ import {
 
 function Surfboard(props) {
   let surfboard = props.surfboard[0];
-  console.log(surfboard);
   return (
     <div>
       <title>Surfboard</title>
