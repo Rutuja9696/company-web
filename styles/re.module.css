@@ -10,20 +10,20 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  box-shadow: 1px 1px 10px 1px gray;
+  box-shadow: 1px 1px 10px 1px rgb(49, 48, 48);
 }
 .companyLogo {
   width: 25vh;
   height: 10vh;
-  margin: 2vh 10vh;
+  margin: 2vh 9vh;
 }
 .navLinks {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  margin: 2vh 10vh;
-  font-size: 15px;
+  margin: 2vh 9vh;
+  font-size: 14px;
 }
 .navItem {
   margin: 3vh;
