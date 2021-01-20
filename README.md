@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Company website -SSR
+
+Company website-SSR contains a landing page from where we can navigate to three other pages like Contentstack,Surfboard and RawEngineering. This project is built using Next.js and is been hosted on vercel.
 
 ## Getting Started
 
@@ -32,3 +34,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Backend
+
+### Hosted backend [link](https://rutuja9696.github.io/company-data/)
+
+### Backend repository [link](https://github.com/Rutuja9696/company-data.git)
+
+## Live demo link
+
+You can view the demo of hosted project [here]()
+
+## Required routes
+
+/ : to view home page.\
+/contentstack :to view dummy contentstack website.\
+/surfboard :to view dummy surfboard website(this page contains link to contantstack and rawEnginnering page).\
+/rawEngineering :to view dummy rawEngg website.
+
+## Author
+
+- **Rutuja Patil** - _work by_ - [Rutuja](https://github.com/Rutuja9696)
