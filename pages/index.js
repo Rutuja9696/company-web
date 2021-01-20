@@ -3,7 +3,6 @@ import url from "../data/data";
 import Link from "next/link";
 
 //components
-// import HomeMarkup from "../components/Home";
 import HomeStyles from "../styles/Index.module.css";
 
 //function to render data on home page
