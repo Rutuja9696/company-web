@@ -1,0 +1,133 @@
+.header {
+  background-color: black;
+  color: white;
+  height: 90vh;
+  margin-bottom: 10vh;
+  font-family: "Montserrat", sans-serif;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  box-shadow: 1px 1px 10px 1px gray;
+}
+.companyLogo {
+  width: 25vh;
+  height: 10vh;
+  margin: 2vh 10vh;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 2vh 10vh;
+  font-size: 15px;
+}
+.nav-Item {
+  margin: 3vh;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.bannerText {
+  width: 40%;
+  margin: 5vh 15vh;
+}
+.bannerTitle {
+  font-size: 50px;
+}
+.bannerSubtitle {
+  font-size: 20px;
+}
+.bannerImage {
+  width: 80vh;
+  height: 80vh;
+  margin: 0px 5vh;
+}
+.introText {
+  font-size: 18px;
+  margin: 15vh;
+}
+.sectionHeading {
+  text-align: center;
+  color: red;
+}
+.whatWeDo {
+  width: 80%;
+  margin: 5vh auto;
+  display: flex;
+  justify-content: space-between;
+}
+.whatWeDoImage {
+  width: 30%;
+  margin: auto;
+}
+.whatWeDoImage img {
+  width: 100%;
+  height: 100%;
+}
+.whatWeDoText {
+  margin: 5vh;
+}
+.whatWeDoHeading {
+  font-size: 20px;
+}
+.whatWeDoSubheading {
+  font-size: 15px;
+}
+.latestWorkContainer {
+  width: 90%;
+  margin: 5vh auto;
+  display: flex;
+  text-align: center;
+}
+.latestWorkImage {
+  width: 50%;
+  margin: auto;
+}
+.latestWorkImage img {
+  width: 100%;
+  height: 100%;
+}
+.testimonialContainer {
+  width: 90%;
+  margin: 5vh auto;
+  display: flex;
+  text-align: center;
+}
+.testimonailImage {
+  width: 10%;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+.footerContainer {
+  background-color: black;
+  color: white;
+}
+.footerHeading {
+  text-align: center;
+  font-size: 30px;
+  padding: 10vh;
+}
+.copyrightContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10vh;
+  padding-bottom: 10vh;
+}
+.copyrightLinks {
+  display: flex;
+}
+.copyrightLinks p {
+  margin-right: 5vh;
+}
+.copyrightImage {
+  width: 5%;
+}
+.copyrightImage img {
+  width: 100%;
+  height: 100%;
+}
