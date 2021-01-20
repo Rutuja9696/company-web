@@ -43,7 +43,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Live demo link
 
-You can view the demo of hosted project [here]()
+You can view the demo of hosted project [here](https://company-web.vercel.app/)
 
 ## Required routes
 
