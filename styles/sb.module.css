@@ -158,10 +158,6 @@
     flex-direction: column;
     justify-content: center;
   }
-  .navLinks {
-    flex-direction: column;
-    justify-content: center;
-  }
 }
 @media (max-width: 867px) {
   .portfolioContainer {
@@ -214,6 +210,12 @@
     width: 45%;
     height: 30%;
     margin: auto;
+  }
+}
+@media (max-width: 320px) {
+  .navLinks {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media (max-width: 250px) {
