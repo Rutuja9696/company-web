@@ -1,3 +1,79 @@
+.header {
+  height: 90vh;
+  margin-bottom: 10vh;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.companyLogo {
+  width: 25vh;
+  height: 10vh;
+  margin: 2vh 10vh;
+}
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 2vh 10vh;
+  font-size: 15px;
+}
+.navItem {
+  margin: 2vh;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-text {
+  margin: 5vh 15vh;
+}
+.bannerTitle {
+  font-size: 50px;
+}
+.bannerSubtitle {
+  font-size: 25px;
+  width: 60%;
+}
+.sectionHeading {
+  font-size: 30px;
+  text-align: center;
+}
+.portfolioContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+.portfolioImage {
+  width: 90vh;
+  height: 60vh;
+  margin: 0px 5vh;
+}
+.companyName {
+  font-size: 30px;
+}
+.companyDescription {
+  font-size: 18px;
+}
+.teamContainer {
+  width: 80%;
+  margin: 5vh auto;
+  display: flex;
+  border: 1px solid gray;
+  /* border: ; */
+}
+.teamImage {
+  width: 40vh;
+  height: 40vh;
+  margin: 5vh;
+  border-radius: 3%;
+}
+.teamText {
+  margin: 5vh;
+}
 /* our philosophy */
 .philosophyContainer {
   width: 100%;
