@@ -6,8 +6,11 @@
   font-family: "Montserrat", sans-serif;
 }
 .navigation {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  position: fixed;
+  background-color: black;
   flex-wrap: nowrap;
   justify-content: space-between;
   box-shadow: 1px 1px 10px 1px rgb(49, 48, 48);
@@ -29,6 +32,7 @@
   margin: 3vh;
 }
 .banner {
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -50,6 +54,9 @@
 .introText {
   font-size: 18px;
   margin: 15vh;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
 }
 .sectionHeading {
   text-align: center;
@@ -71,9 +78,11 @@
 }
 .whatWeDoText {
   margin: 5vh;
+  color: rgba(0, 0, 0, 0.8);
 }
 .whatWeDoHeading {
-  font-size: 20px;
+  font-size: 32px;
+  font-weight: 700;
 }
 .whatWeDoSubheading {
   font-size: 15px;
@@ -97,6 +106,7 @@
   margin: 5vh auto;
   display: flex;
   text-align: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 .testimonailImage {
   width: 10%;
@@ -211,6 +221,9 @@
   .navLinks {
     flex-direction: column;
     font-size: 10px;
+  }
+  .banner {
+    padding-top: 30vh;
   }
 }
 @media (max-width: 400px) {
