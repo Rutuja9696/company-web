@@ -2,6 +2,14 @@ import Link from "next/link";
 import axios from "axios";
 import url from "../data/data";
 import sbStyles from "../styles/sb.module.css";
+import {
+  FaFacebookSquare,
+  FaLinkedin,
+  FaTwitterSquare,
+  FaYoutubeSquare,
+  FaInstagramSquare,
+} from "react-icons/fa";
+
 function Surfboard(props) {
   let surfboard = props.surfboard[0];
   console.log(surfboard);
@@ -17,7 +25,17 @@ function Surfboard(props) {
               src={surfboard.surfboardLogo}
               alt="Logo"
             />
-
+            <div className={sbStyles.navLinks}>
+              <Link href="/">
+                <p className={sbStyles.navItem}>Home</p>
+              </Link>
+              <Link href="/rawEngineering">
+                <p className={sbStyles.navItem}>Raw Engineering</p>
+              </Link>
+              <Link href="/contentstack">
+                <p className={sbStyles.navItem}>Contentstack</p>
+              </Link>
+            </div>
             <div className={sbStyles.navLinks}>
               {surfboard.navigationLinks.map((link, i) => {
                 return (
@@ -28,12 +46,16 @@ function Surfboard(props) {
               })}
             </div>
           </nav>
-          <div className={sbStyles.banner}>
-            <div className={sbStyles.bannerText}>
-              <p className={sbStyles.bannerTitle}>{surfboard.bannerHeading}</p>
-              <p className={sbStyles.bannerSubtitle}>
-                {surfboard.bannerSubHeading}
-              </p>
+          <div className={sbStyles.bannerContainer}>
+            <div className={sbStyles.banner}>
+              <div className={sbStyles.bannerText}>
+                <p className={sbStyles.bannerTitle}>
+                  {surfboard.bannerHeading}
+                </p>
+                <p className={sbStyles.bannerSubtitle}>
+                  {surfboard.bannerSubHeading}
+                </p>
+              </div>
             </div>
           </div>
           <div>
@@ -69,8 +91,8 @@ function Surfboard(props) {
                 <div className={sbStyles.teamContainer} key={i}>
                   <img className={sbStyles.teamImage} src={team.image} alt="" />
                   <div className={sbStyles.teamText}>
-                    <p>{team.name}</p>
-                    <p>{team.message}</p>
+                    <p className={sbStyles.name}>{team.name}</p>
+                    <p className={sbStyles.about}>{team.message}</p>
                   </div>
                 </div>
               );
@@ -91,6 +113,58 @@ function Surfboard(props) {
               })}
             </div>
           </div>
+          <footer className={sbStyles.footerContainer}>
+            <div className={sbStyles.footerContent}>
+              <img
+                className={sbStyles.companyLogo}
+                src={surfboard.surfboardLogo}
+                alt="Logo"
+              />
+              <div>
+                <p>Portfolio</p>
+                <p>Academy</p>
+                <p>Events</p>
+              </div>
+              <div>
+                <p>Gallery</p>
+                <p>e-Certificates</p>
+                <p>Contact Us</p>
+              </div>
+              <div>
+                <p>info@surfboardventures.com</p>
+              </div>
+              <div>
+                <FaFacebookSquare
+                  className={sbStyles.icon}
+                  size="5vh"
+                  color="black"
+                />
+                <FaLinkedin
+                  className={sbStyles.icon}
+                  size="5vh"
+                  color="black"
+                />
+                <FaTwitterSquare
+                  className={sbStyles.icon}
+                  size="5vh"
+                  color="black"
+                />
+                <FaYoutubeSquare
+                  className={sbStyles.icon}
+                  size="5vh"
+                  color="black"
+                />
+                <FaInstagramSquare
+                  className={sbStyles.icon}
+                  size="5vh"
+                  color="black"
+                />
+              </div>
+            </div>
+            <p className={sbStyles.copyright}>
+              Copyright © 2021 Surfboard Ventures. All Rights Reserved.
+            </p>
+          </footer>
         </div>
       </div>
     </div>

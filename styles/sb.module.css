@@ -1,12 +1,14 @@
 .header {
-  height: 90vh;
-  margin-bottom: 10vh;
+  width: 100%;
+  margin: 0;
 }
 .navigation {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding: 4px;
+  font-family: "Gilroy-Medium";
 }
 .companyLogo {
   width: 25vh;
@@ -18,28 +20,49 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  margin: 2vh 10vh;
-  font-size: 15px;
+  margin: 2vh 2vh;
+  font-size: 18px;
+  line-height: 27px;
 }
 .navItem {
   margin: 2vh;
+  font-family: "Gilroy-Medium";
+}
+.bannerContainer {
+  width: 100%;
 }
 .banner {
+  width: 70%;
   display: flex;
   justify-content: space-between;
+  margin-left: 3%;
 }
-.banner-text {
-  margin: 5vh 15vh;
+.bannerText {
+  margin-top: 0;
+  margin: auto auto 0 4px;
+  text-align: center;
 }
 .bannerTitle {
-  font-size: 50px;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: left;
+  margin: 4% auto 2% 2%;
+  font-family: "Gilroy-Medium";
 }
 .bannerSubtitle {
-  font-size: 25px;
-  width: 60%;
+  font-size: 22px;
+  line-height: 33px;
+  width: 75%;
+  text-align: left;
+  margin-left: 2%;
+  margin-top: 0;
+  font-family: "Gilroy-Medium";
 }
 .sectionHeading {
-  font-size: 30px;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 500;
   text-align: center;
 }
 .portfolioContainer {
@@ -53,17 +76,23 @@
   margin: 0px 5vh;
 }
 .companyName {
-  font-size: 30px;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+  font-family: "Gilroy-Medium";
 }
 .companyDescription {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Gilroy-Medium";
 }
 .teamContainer {
   width: 80%;
   margin: 5vh auto;
   display: flex;
-  border: 1px solid gray;
-  /* border: ; */
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
 }
 .teamImage {
   width: 40vh;
@@ -73,6 +102,17 @@
 }
 .teamText {
   margin: 5vh;
+}
+.name {
+  font-family: "Gilroy-Medium";
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.about {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Gilroy-Medium";
 }
 /* our philosophy */
 .philosophyContainer {
@@ -87,6 +127,7 @@
   text-align: center;
   padding: 30px;
   justify-content: space-evenly;
+  font-family: "Gilroy-Medium";
 }
 .pContent {
   margin: 0px 10vh;
@@ -97,4 +138,13 @@
 }
 .pContent h2 {
   min-height: 10vh;
+}
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  margin: 10vh 5vh;
+}
+.copyright {
+  text-align: center;
+  padding-bottom: 10vh;
 }
