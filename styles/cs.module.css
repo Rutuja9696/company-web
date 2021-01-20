@@ -4,6 +4,7 @@
   height: auto;
   background: no-repeat
     url(https://images.contentstack.io/v3/assets/bltc5a09bf374882538/blt0eac3686a06a4a3f/5f1a2be2ecbff322d09554d6/hero-carousel-1.jpg);
+  background-size: 200vh 200vh;
   text-align: center;
 }
 .nav {
@@ -127,10 +128,13 @@
   }
   .whyBoxItems {
     width: 100%;
+    padding: 5vh;
+  }
+  /* .whyBoxItems {
     margin: 0px auto 10px;
     padding: 30px;
     box-shadow: 0px 0px 12px 0px rgb(219, 217, 217);
-  }
+  } */
 }
 @media (max-width: 883px) {
   .nav {
@@ -161,6 +165,10 @@
   }
 }
 @media (max-width: 560px) {
+  .heading {
+    font-size: 40px;
+    margin: 0px auto;
+  }
   .nav {
     flex-direction: column;
     font-size: 14px;
@@ -197,6 +205,11 @@
   .banner2 {
     margin-bottom: 220vh;
   }
+  .whyBoxItems h3,
+  .whyBoxItems p {
+    margin: 0;
+    font-size: 20px;
+  }
 }
 @media (max-width: 295px) {
   .buttons,
@@ -210,15 +223,120 @@
   }
   .banner2 {
     margin-bottom: 250vh;
+    font-size: 20px;
+  }
+  .banner2 h2 {
+    font-size: 20px;
+  }
+  .whyBox {
+    left: 5px;
+    right: 5px;
   }
 }
 @media (max-width: 270px) {
   .banner2 {
-    margin-bottom: 300vh;
+    margin-bottom: 250vh;
   }
 }
 @media (max-width: 230px) {
+  .lists,
+  .link-text {
+    padding: 2vh;
+    margin: 0;
+  }
+  .heading {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .subHeading {
+    font-size: 10px;
+  }
   .banner2 {
-    margin-bottom: 330vh;
+    min-height: 120px;
+    margin-bottom: 60vh;
+  }
+  .whyBoxItems {
+    padding: 3vh;
+  }
+  .whyBoxItems h3,
+  .whyBoxItems p {
+    font-size: 10px;
+    line-height: 7px;
+  }
+  .believeBox {
+    padding: 0;
+  }
+}
+@media (max-width: 200px) {
+  .bannerLogo {
+    width: 20vh;
+    height: auto;
+    margin: auto;
+  }
+  .banner2 {
+    margin-bottom: 100vh;
+  }
+  .believeBox h1 {
+    font-size: 15px;
+  }
+  .buttons,
+  .button2 {
+    margin: 1vh auto;
+    font-size: 10px;
+    width: 70px;
+  }
+  .banner2 h2 {
+    font-size: 15px;
+  }
+  /* .whyBox {
+    font-size: 10px;
+  }
+  .whyBoxItems {
+    font-size: 8px;
+  } */
+}
+@media (max-width: 130px) {
+  .bannerLogo {
+    width: 80vw;
+  }
+  .lists {
+    font-size: 10px;
+    padding: 3px 0px;
+  }
+  .heading,
+  .subHeading {
+    font-size: 10px;
+  }
+  .linkText {
+    padding: 0px;
+    font-size: 10px;
+  }
+  .banner2 {
+    margin-bottom: 120vh;
+  }
+  .whyBoxItems {
+    padding: 5vh 2px;
+  }
+  .banner2 h2 {
+    font-size: 10px;
+  }
+  .whyBox h3,
+  .whyBox p {
+    font-size: 8px;
+  }
+  .believeBox h1 {
+    font-size: 10px;
+  }
+  .buttons,
+  .button2 {
+    font-size: 8px;
+    width: 50px;
+  }
+  .footerSection {
+    font-size: 10px;
+    margin: auto;
+  }
+  .footerSection p {
+    padding: 5px;
   }
 }
