@@ -156,7 +156,6 @@
   }
   .navigation {
     flex-direction: column;
-    justify-content: center;
   }
 }
 @media (max-width: 867px) {
@@ -183,7 +182,6 @@
   }
   .teamContainer {
     flex-direction: column;
-    justify-content: center;
     margin: auto;
   }
   .teamImage {
@@ -196,12 +194,10 @@
   }
   .philosophy {
     flex-direction: column;
-    justify-content: center;
     padding: 1px;
   }
   .footerContent {
     flex-direction: column;
-    justify-content: center;
     margin: 2px;
   }
 }
@@ -215,7 +211,6 @@
 @media (max-width: 320px) {
   .navLinks {
     flex-direction: column;
-    justify-content: center;
   }
 }
 @media (max-width: 250px) {
